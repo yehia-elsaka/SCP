@@ -10,4 +10,7 @@
 
 @interface MainViewController : UIViewController
 
+- (IBAction)sendSOS:(id)sender;
+
+
 @end

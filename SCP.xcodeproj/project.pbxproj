@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		045DE4C11BC12C3200DD43DB /* ServicesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DE4C01BC12C3200DD43DB /* ServicesController.m */; };
 		045DE4C41BC1655B00DD43DB /* ServicesRequestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DE4C31BC1655B00DD43DB /* ServicesRequestController.m */; };
+		045DE4C61BC1879600DD43DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045DE4C51BC1879600DD43DB /* Main.storyboard */; };
 		04B85F341BC048F6004BBC40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B85F331BC048F6004BBC40 /* main.m */; };
 		04B85F371BC048F6004BBC40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B85F361BC048F6004BBC40 /* AppDelegate.m */; };
-		04B85F3D1BC048F6004BBC40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B85F3B1BC048F6004BBC40 /* Main.storyboard */; };
 		04B85F3F1BC048F6004BBC40 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B85F3E1BC048F6004BBC40 /* Images.xcassets */; };
 		04B85F421BC048F6004BBC40 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B85F401BC048F6004BBC40 /* LaunchScreen.xib */; };
 		04B85F4E1BC048F6004BBC40 /* SCPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B85F4D1BC048F6004BBC40 /* SCPTests.m */; };
@@ -35,12 +35,12 @@
 		045DE4C01BC12C3200DD43DB /* ServicesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesController.m; sourceTree = "<group>"; };
 		045DE4C21BC1655B00DD43DB /* ServicesRequestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesRequestController.h; sourceTree = "<group>"; };
 		045DE4C31BC1655B00DD43DB /* ServicesRequestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesRequestController.m; sourceTree = "<group>"; };
+		045DE4C51BC1879600DD43DB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		04B85F2E1BC048F6004BBC40 /* SCP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B85F321BC048F6004BBC40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04B85F331BC048F6004BBC40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04B85F351BC048F6004BBC40 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04B85F361BC048F6004BBC40 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		04B85F3C1BC048F6004BBC40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04B85F3E1BC048F6004BBC40 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		04B85F411BC048F6004BBC40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		04B85F471BC048F6004BBC40 /* SCPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,7 +100,7 @@
 				04B85F351BC048F6004BBC40 /* AppDelegate.h */,
 				04B85F361BC048F6004BBC40 /* AppDelegate.m */,
 				04B85F5C1BC04D74004BBC40 /* Controllers */,
-				04B85F3B1BC048F6004BBC40 /* Main.storyboard */,
+				045DE4C51BC1879600DD43DB /* Main.storyboard */,
 				04B85F3E1BC048F6004BBC40 /* Images.xcassets */,
 				04B85F401BC048F6004BBC40 /* LaunchScreen.xib */,
 				04B85F311BC048F6004BBC40 /* Supporting Files */,
@@ -248,7 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04B85F3D1BC048F6004BBC40 /* Main.storyboard in Resources */,
+				045DE4C61BC1879600DD43DB /* Main.storyboard in Resources */,
 				04B85F421BC048F6004BBC40 /* LaunchScreen.xib in Resources */,
 				04B85F3F1BC048F6004BBC40 /* Images.xcassets in Resources */,
 			);
@@ -329,14 +329,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		04B85F3B1BC048F6004BBC40 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04B85F3C1BC048F6004BBC40 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04B85F401BC048F6004BBC40 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

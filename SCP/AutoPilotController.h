@@ -12,8 +12,9 @@
 
 @property (weak, nonatomic) IBOutlet UIView *mapView;
 
-
-
 - (IBAction)back:(id)sender;
+
+
+- (IBAction)sendSOS:(id)sender;
 
 @end

@@ -8,7 +8,11 @@
 
 #import "AutoPilotController.h"
 @import GoogleMaps;
+
 @interface AutoPilotController ()
+{
+    GMSMarker *marker2;
+}
 
 @end
 
@@ -128,7 +132,7 @@
     
     
     // Creates a marker in the center of the map.
-    GMSMarker *marker2 = [[GMSMarker alloc] init];
+    marker2 = [[GMSMarker alloc] init];
     marker2.position = CLLocationCoordinate2DMake(30.741903,32.336893);
     marker2.title = @"American ship";
     marker2.snippet = @"Suez Canal";
@@ -136,7 +140,20 @@
     //mapView_.mapType = kGMSTypeHybrid;
     //    kGMSTypeTerrain
     marker2.appearAnimation = kGMSMarkerAnimationPop;
-    marker2.icon = [UIImage imageNamed:@"Green_Boat"];
+    
+    
+    bool SOSReceived = [[NSUserDefaults standardUserDefaults]
+                            boolForKey:@"SOS"];
+    
+    if (SOSReceived) {
+       
+        marker2.icon = [UIImage imageNamed:@"Red_Boat"];
+    }
+    else
+    {
+        marker2.icon = [UIImage imageNamed:@"Green_Boat"];
+    }
+    
 
     
     
@@ -205,6 +222,15 @@
 - (IBAction)back:(id)sender {
     
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)sendSOS:(id)sender {
+    
+    marker2.icon = [UIImage imageNamed:@"Red_Boat"];
+    
+    bool SOSRecieved = YES;
+    [[NSUserDefaults standardUserDefaults] setBool:SOSRecieved forKey:@"SOS"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 @end

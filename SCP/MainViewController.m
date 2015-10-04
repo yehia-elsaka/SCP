@@ -7,7 +7,7 @@
 //
 
 #import "MainViewController.h"
-
+#import "AutoPilotController.h"
 @interface MainViewController ()
 
 @end
@@ -31,6 +31,19 @@
     return UIStatusBarStyleLightContent;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"SOS"]) {
+        
+        // Get destination view
+        AutoPilotController *autoPilot = [segue destinationViewController];
+        
+        bool SOSRecieved = YES;
+        [[NSUserDefaults standardUserDefaults] setBool:SOSRecieved forKey:@"SOS"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+}
+
 /*
 #pragma mark - Navigation
 
@@ -41,4 +54,8 @@
 }
 */
 
+- (IBAction)sendSOS:(id)sender {
+    
+     [self performSegueWithIdentifier:@"SOS" sender:sender];
+}
 @end

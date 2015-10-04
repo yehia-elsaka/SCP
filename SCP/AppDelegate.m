@@ -21,6 +21,11 @@
     
     [GMSServices provideAPIKey:@"AIzaSyDbqTJlkA2c0Zb2kILGht7OTGtWI-ekAQg"];
     
+    // reset SOS
+    bool SOSRecieved = NO;
+    [[NSUserDefaults standardUserDefaults] setBool:SOSRecieved forKey:@"SOS"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
     return YES;
 }
 
