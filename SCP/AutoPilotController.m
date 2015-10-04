@@ -14,29 +14,31 @@
 
 @implementation AutoPilotController
 {
-     GMSMapView *mapView_;
+    GMSMapView *mapView_;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Create a GMSCameraPosition that tells the map to display the
     // coordinate -33.86,151.20 at zoom level 6.30.731772, 32.339391
-    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:30.731772
-                                                            longitude:32.339391
-                                                                 zoom:18];
-//    GMSCameraPosition *camera =
-//    [GMSCameraPosition cameraWithLatitude:30.731772
-//                                longitude:32.339391
-//                                     zoom:17.5
-//                                  bearing:30
-//                             viewingAngle:40];
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:30.746185
+                                                            longitude:32.335879
+                                                                 zoom:14
+                                                              bearing:10
+                                                         viewingAngle:180];
+    //    GMSCameraPosition *camera =
+    //    [GMSCameraPosition cameraWithLatitude:30.731772
+    //                                longitude:32.339391
+    //                                     zoom:17.5
+    //                                  bearing:30
+    //                             viewingAngle:40];
     mapView_ = [GMSMapView mapWithFrame:CGRectMake(0, 0, 1024, 673) camera:camera];
     mapView_.myLocationEnabled = YES;
     
- 
-
+    
+    
     GMSMutablePath *path = [GMSMutablePath path];
-        [path addLatitude:30.731772 longitude:32.339391];
+    [path addLatitude:30.731772 longitude:32.339391];
     [path addLatitude:30.732904 longitude:32.339069];
     [path addLatitude:30.733749 longitude:32.338801];
     [path addLatitude:30.735589 longitude:32.338962];
@@ -44,6 +46,8 @@
     [path addLatitude:30.738310 longitude:32.337696];
     [path addLatitude:30.740218 longitude:32.337777];
     [path addLatitude:30.741903 longitude:32.336893];
+    
+    
     [path addLatitude:30.744161 longitude:32.336602];
     [path addLatitude:30.746185 longitude:32.335879];
     [path addLatitude:30.751427 longitude:32.334199];
@@ -54,6 +58,8 @@
     [path addLatitude:30.769300 longitude:32.329429];
     [path addLatitude:30.773281 longitude:32.328271];
     [path addLatitude:30.779415 longitude:32.326023];
+    
+    
     [path addLatitude:30.784239 longitude:32.324723];
     [path addLatitude:30.787345 longitude:32.325014];
     [path addLatitude:30.791739 longitude:32.323406];
@@ -63,15 +69,17 @@
     [path addLatitude:30.826421 longitude:32.318173];
     [path addLatitude:30.840119 longitude:32.317737];
     [path addLatitude:30.851350 longitude:32.315266];
+    
+    
     [path addLatitude:30.871813 longitude:32.316938];
     [path addLatitude:30.885660 longitude:32.314685];
     [path addLatitude:30.907893 longitude:32.313449];
     
     
-        [path addLatitude:30.909094 longitude:32.313535];
-            [path addLatitude:30.910311 longitude:32.313530];
-            [path addLatitude:30.911713 longitude:32.314710];
-            [path addLatitude:30.913631 longitude:32.315539];
+    [path addLatitude:30.909094 longitude:32.313535];
+    [path addLatitude:30.910311 longitude:32.313530];
+    [path addLatitude:30.911713 longitude:32.314710];
+    [path addLatitude:30.913631 longitude:32.315539];
     [path addLatitude:30.914823 longitude:32.315567];
     [path addLatitude:30.915708 longitude:32.314686];
     [path addLatitude:30.917403 longitude:32.315142];
@@ -94,14 +102,14 @@
     [path addLatitude:31.242527 longitude:32.355801];
     
     
-
+    
     
     GMSPolyline *polyline = [GMSPolyline polylineWithPath:path];
-    polyline.strokeColor = [UIColor blueColor];
+    polyline.strokeColor = [UIColor colorWithRed:(102/255.0) green:(204/255.0) blue:(0/255.0) alpha:1];
     polyline.strokeWidth = 5.f;
-
+    
     polyline.map = mapView_;
-
+    
     
     
     [self.mapView addSubview:mapView_];
@@ -111,11 +119,66 @@
     marker.position = CLLocationCoordinate2DMake(30.731772, 32.339391);
     marker.title = @"Australian ship";
     marker.snippet = @"Suez Canal";
-    marker.map = mapView_; 
-//mapView_.mapType = kGMSTypeHybrid;
-//    kGMSTypeTerrain
+    marker.map = mapView_;
+    //mapView_.mapType = kGMSTypeHybrid;
+    //    kGMSTypeTerrain
     marker.appearAnimation = kGMSMarkerAnimationPop;
     marker.icon = [UIImage imageNamed:@"Blue_Boat"];
+
+    
+    
+    // Creates a marker in the center of the map.
+    GMSMarker *marker2 = [[GMSMarker alloc] init];
+    marker2.position = CLLocationCoordinate2DMake(30.741903,32.336893);
+    marker2.title = @"American ship";
+    marker2.snippet = @"Suez Canal";
+    marker2.map = mapView_;
+    //mapView_.mapType = kGMSTypeHybrid;
+    //    kGMSTypeTerrain
+    marker2.appearAnimation = kGMSMarkerAnimationPop;
+    marker2.icon = [UIImage imageNamed:@"Green_Boat"];
+
+    
+    
+    
+    
+    
+    
+    
+    // Creates a marker in the center of the map.
+    GMSMarker *marker3 = [[GMSMarker alloc] init];
+    marker3.position = CLLocationCoordinate2DMake(30.760541,32.332173);
+    marker3.title = @"Australian ship";
+    marker3.snippet = @"Suez Canal";
+    marker3.map = mapView_;
+    //mapView_.mapType = kGMSTypeHybrid;
+    //    kGMSTypeTerrain
+    marker3.appearAnimation = kGMSMarkerAnimationPop;
+    marker3.icon = [UIImage imageNamed:@"Blue_Boat"];
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    // Creates a marker in the center of the map.
+    GMSMarker *marker4 = [[GMSMarker alloc] init];
+    marker4.position = CLLocationCoordinate2DMake(30.871813,32.316938);
+    marker4.title = @"Australian ship";
+    marker4.snippet = @"Suez Canal";
+    marker4.map = mapView_;
+    //mapView_.mapType = kGMSTypeHybrid;
+    //    kGMSTypeTerrain
+    marker4.appearAnimation = kGMSMarkerAnimationPop;
+    marker4.icon = [UIImage imageNamed:@"Blue_Boat"];
+
+    
+
     
 }
 
@@ -130,14 +193,14 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 - (IBAction)back:(id)sender {
     
