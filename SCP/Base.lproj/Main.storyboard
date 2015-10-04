@@ -337,12 +337,14 @@
                                 <rect key="frame" x="16" y="20" width="992" height="96"/>
                                 <color key="backgroundColor" red="0.1176470588" green="0.50196078430000002" blue="0.7843137255" alpha="0.17000000000000001" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="116" id="QJ1-Eh-CNd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="116" id="QJ1-Eh-CNd">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="74"/>
+                                    </constraint>
                                     <constraint firstAttribute="height" constant="96" id="Wxn-Xd-e6L">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="116"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="74"/>
                                     </constraint>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="50"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="29"/>
                                 <color key="textColor" red="0.1176470588" green="0.50196078430000002" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
