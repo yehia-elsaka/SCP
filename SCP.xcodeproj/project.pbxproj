@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		045DE4C11BC12C3200DD43DB /* ServicesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DE4C01BC12C3200DD43DB /* ServicesController.m */; };
+		045DE4C41BC1655B00DD43DB /* ServicesRequestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DE4C31BC1655B00DD43DB /* ServicesRequestController.m */; };
 		04B85F341BC048F6004BBC40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B85F331BC048F6004BBC40 /* main.m */; };
 		04B85F371BC048F6004BBC40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B85F361BC048F6004BBC40 /* AppDelegate.m */; };
 		04B85F3D1BC048F6004BBC40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B85F3B1BC048F6004BBC40 /* Main.storyboard */; };
@@ -16,7 +17,7 @@
 		04B85F4E1BC048F6004BBC40 /* SCPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B85F4D1BC048F6004BBC40 /* SCPTests.m */; };
 		04B85F5B1BC04D6D004BBC40 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B85F5A1BC04D6D004BBC40 /* MainViewController.m */; };
 		07EFC23DD907B5E243B0675A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF236CFA893B56A4ACB7964 /* libPods.a */; };
-		62896E5B1BC1360C002F9A70 /* AutoPilotController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62896E5A1BC1360C002F9A70 /* AutoPilotController.m */; settings = {ASSET_TAGS = (); }; };
+		62896E5B1BC1360C002F9A70 /* AutoPilotController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62896E5A1BC1360C002F9A70 /* AutoPilotController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,8 @@
 /* Begin PBXFileReference section */
 		045DE4BF1BC12C3200DD43DB /* ServicesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesController.h; sourceTree = "<group>"; };
 		045DE4C01BC12C3200DD43DB /* ServicesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesController.m; sourceTree = "<group>"; };
+		045DE4C21BC1655B00DD43DB /* ServicesRequestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesRequestController.h; sourceTree = "<group>"; };
+		045DE4C31BC1655B00DD43DB /* ServicesRequestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesRequestController.m; sourceTree = "<group>"; };
 		04B85F2E1BC048F6004BBC40 /* SCP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B85F321BC048F6004BBC40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04B85F331BC048F6004BBC40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 				045DE4C01BC12C3200DD43DB /* ServicesController.m */,
 				62896E591BC1360C002F9A70 /* AutoPilotController.h */,
 				62896E5A1BC1360C002F9A70 /* AutoPilotController.m */,
+				045DE4C21BC1655B00DD43DB /* ServicesRequestController.h */,
+				045DE4C31BC1655B00DD43DB /* ServicesRequestController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 				04B85F371BC048F6004BBC40 /* AppDelegate.m in Sources */,
 				62896E5B1BC1360C002F9A70 /* AutoPilotController.m in Sources */,
 				04B85F341BC048F6004BBC40 /* main.m in Sources */,
+				045DE4C41BC1655B00DD43DB /* ServicesRequestController.m in Sources */,
 				04B85F5B1BC04D6D004BBC40 /* MainViewController.m in Sources */,
 				045DE4C11BC12C3200DD43DB /* ServicesController.m in Sources */,
 			);
