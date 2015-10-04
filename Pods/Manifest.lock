@@ -5,6 +5,6 @@ DEPENDENCIES:
   - GoogleMaps
 
 SPEC CHECKSUMS:
-  GoogleMaps: 945e4ac3b74bcca3ddada51df256eb7beddb474d
+  GoogleMaps: a4f119128c05141bdd8f559dd32d533b24ba0fbe
 
 COCOAPODS: 0.38.2
