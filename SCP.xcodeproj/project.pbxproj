@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045DE4C11BC12C3200DD43DB /* ServicesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DE4C01BC12C3200DD43DB /* ServicesController.m */; };
 		04B85F341BC048F6004BBC40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B85F331BC048F6004BBC40 /* main.m */; };
 		04B85F371BC048F6004BBC40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B85F361BC048F6004BBC40 /* AppDelegate.m */; };
 		04B85F3D1BC048F6004BBC40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B85F3B1BC048F6004BBC40 /* Main.storyboard */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		045DE4BF1BC12C3200DD43DB /* ServicesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesController.h; sourceTree = "<group>"; };
+		045DE4C01BC12C3200DD43DB /* ServicesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesController.m; sourceTree = "<group>"; };
 		04B85F2E1BC048F6004BBC40 /* SCP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B85F321BC048F6004BBC40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04B85F331BC048F6004BBC40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -123,6 +126,8 @@
 			children = (
 				04B85F591BC04D6D004BBC40 /* MainViewController.h */,
 				04B85F5A1BC04D6D004BBC40 /* MainViewController.m */,
+				045DE4BF1BC12C3200DD43DB /* ServicesController.h */,
+				045DE4C01BC12C3200DD43DB /* ServicesController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 				04B85F371BC048F6004BBC40 /* AppDelegate.m in Sources */,
 				04B85F341BC048F6004BBC40 /* main.m in Sources */,
 				04B85F5B1BC04D6D004BBC40 /* MainViewController.m in Sources */,
+				045DE4C11BC12C3200DD43DB /* ServicesController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
