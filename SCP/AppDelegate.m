@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 @import GoogleMaps;
 
 @interface AppDelegate ()
@@ -21,6 +22,18 @@
     
     [GMSServices provideAPIKey:@"AIzaSyDbqTJlkA2c0Zb2kILGht7OTGtWI-ekAQg"];
     
+    [Parse enableLocalDatastore];
+    
+    // Initialize Parse.
+    [Parse setApplicationId:@"Zstdd3mJnhlTcVmT7xftpOZbu7Zlrgv2FY5Eqgkn"
+                  clientKey:@"CSxUPevYbM4ZXiOrGeSFA47SsFhELMviOO4fgYPZ"];
+    
+    // [Optional] Track statistics around application opens.
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    
+    
+    
     // reset SOS
     bool SOSRecieved = NO;
     [[NSUserDefaults standardUserDefaults] setBool:SOSRecieved forKey:@"SOS"];
@@ -28,6 +41,13 @@
     
     return YES;
 }
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+   
+        [PFPush handlePush:userInfo];
+        
+   
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
