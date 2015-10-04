@@ -376,7 +376,7 @@
         <!--AutoPilot-->
         <scene sceneID="V0x-CZ-gIp">
             <objects>
-                <viewController id="8xz-g4-6fh" userLabel="AutoPilot" sceneMemberID="viewController">
+                <viewController id="8xz-g4-6fh" userLabel="AutoPilot" customClass="AutoPilotController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="o5g-0c-yht"/>
                         <viewControllerLayoutGuide type="bottom" id="Fi6-oR-AsY"/>
@@ -385,10 +385,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2pq-w1-2zL">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2pq-w1-2zL" userLabel="ToolbarView">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart Service Portal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8GZ-4E-cOn">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auto Pilot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8GZ-4E-cOn">
                                         <rect key="frame" x="16" y="20" width="992" height="96"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -443,7 +443,7 @@
                                             </mask>
                                         </variation>
                                         <connections>
-                                            <action selector="back:" destination="bke-kG-4EJ" eventType="touchUpInside" id="d7d-ZM-1Sp"/>
+                                            <action selector="back:" destination="8xz-g4-6fh" eventType="touchUpInside" id="7Pn-zx-O41"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -484,39 +484,62 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7AH-iP-EG7" userLabel="MapView">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.90196084980000002" green="0.13333334029999999" blue="0.1176470667" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="7AH-iP-EG7" firstAttribute="top" secondItem="2pq-w1-2zL" secondAttribute="bottom" id="7ED-bp-4SG"/>
                             <constraint firstAttribute="trailing" secondItem="2pq-w1-2zL" secondAttribute="trailing" id="HcQ-H2-YjJ"/>
                             <constraint firstItem="Fi6-oR-AsY" firstAttribute="top" secondItem="2pq-w1-2zL" secondAttribute="bottom" constant="674" id="c0q-pP-0H4"/>
+                            <constraint firstItem="7AH-iP-EG7" firstAttribute="leading" secondItem="8U2-7E-wzl" secondAttribute="leading" id="eGn-p3-alU"/>
                             <constraint firstItem="2pq-w1-2zL" firstAttribute="top" secondItem="8U2-7E-wzl" secondAttribute="top" id="giB-Zt-uHj"/>
+                            <constraint firstAttribute="trailing" secondItem="7AH-iP-EG7" secondAttribute="trailing" id="uat-nw-HSO"/>
                             <constraint firstItem="2pq-w1-2zL" firstAttribute="leading" secondItem="8U2-7E-wzl" secondAttribute="leading" id="wDL-a0-Syd"/>
+                            <constraint firstItem="Fi6-oR-AsY" firstAttribute="top" secondItem="7AH-iP-EG7" secondAttribute="bottom" constant="1" id="yg3-NI-E2h"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="2pq-w1-2zL"/>
+                                <exclude reference="7AH-iP-EG7"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="c0q-pP-0H4"/>
                                 <exclude reference="HcQ-H2-YjJ"/>
                                 <exclude reference="giB-Zt-uHj"/>
                                 <exclude reference="wDL-a0-Syd"/>
+                                <exclude reference="7ED-bp-4SG"/>
+                                <exclude reference="eGn-p3-alU"/>
+                                <exclude reference="uat-nw-HSO"/>
+                                <exclude reference="c0q-pP-0H4"/>
+                                <exclude reference="yg3-NI-E2h"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="subviews">
                                 <include reference="2pq-w1-2zL"/>
+                                <include reference="7AH-iP-EG7"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="c0q-pP-0H4"/>
                                 <include reference="HcQ-H2-YjJ"/>
                                 <include reference="giB-Zt-uHj"/>
                                 <include reference="wDL-a0-Syd"/>
+                                <include reference="7ED-bp-4SG"/>
+                                <include reference="eGn-p3-alU"/>
+                                <include reference="uat-nw-HSO"/>
+                                <include reference="c0q-pP-0H4"/>
+                                <include reference="yg3-NI-E2h"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="mapView" destination="7AH-iP-EG7" id="ncj-e8-qlB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="phw-Ba-1V5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -649,13 +672,11 @@
                                         <exclude reference="y71-8k-pEC"/>
                                     </mask>
                                     <mask key="constraints">
+                                        <exclude reference="14r-s2-HGd"/>
+                                        <exclude reference="X2q-AL-LH8"/>
                                         <exclude reference="Tig-fc-0Ia"/>
                                         <exclude reference="hPW-Mn-QQ0"/>
                                         <exclude reference="xo2-Ht-ZqM"/>
-                                        <exclude reference="14r-s2-HGd"/>
-                                        <exclude reference="X2q-AL-LH8"/>
-                                        <exclude reference="4su-75-AE9"/>
-                                        <exclude reference="jJd-jy-WcU"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
@@ -665,13 +686,11 @@
                                         <include reference="y71-8k-pEC"/>
                                     </mask>
                                     <mask key="constraints">
+                                        <include reference="14r-s2-HGd"/>
+                                        <include reference="X2q-AL-LH8"/>
                                         <include reference="Tig-fc-0Ia"/>
                                         <include reference="hPW-Mn-QQ0"/>
                                         <include reference="xo2-Ht-ZqM"/>
-                                        <include reference="14r-s2-HGd"/>
-                                        <include reference="X2q-AL-LH8"/>
-                                        <include reference="4su-75-AE9"/>
-                                        <include reference="jJd-jy-WcU"/>
                                     </mask>
                                 </variation>
                             </view>
