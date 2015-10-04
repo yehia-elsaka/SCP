@@ -388,33 +388,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2pq-w1-2zL" userLabel="ToolbarView">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auto Pilot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8GZ-4E-cOn">
-                                        <rect key="frame" x="16" y="20" width="992" height="96"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="96" id="Ieh-HN-Fgu">
-                                                <variation key="heightClass=regular-widthClass=regular" constant="116"/>
-                                            </constraint>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="116" id="Ne9-Qy-RJm"/>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="74" id="Qhi-84-NVu"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="30"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="Ne9-Qy-RJm"/>
-                                                <exclude reference="Qhi-84-NVu"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <mask key="constraints">
-                                                <exclude reference="Ieh-HN-Fgu"/>
-                                                <exclude reference="Ne9-Qy-RJm"/>
-                                                <include reference="Qhi-84-NVu"/>
-                                            </mask>
-                                        </variation>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBz-LP-baS">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                         <constraints>
@@ -446,10 +419,39 @@
                                             <action selector="back:" destination="8xz-g4-6fh" eventType="touchUpInside" id="7Pn-zx-O41"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auto Pilot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8GZ-4E-cOn">
+                                        <rect key="frame" x="16" y="20" width="992" height="96"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="96" id="Ieh-HN-Fgu">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="116"/>
+                                            </constraint>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="116" id="Ne9-Qy-RJm"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="74" id="Qhi-84-NVu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Ne9-Qy-RJm"/>
+                                                <exclude reference="Qhi-84-NVu"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <mask key="constraints">
+                                                <exclude reference="Ieh-HN-Fgu"/>
+                                                <exclude reference="Ne9-Qy-RJm"/>
+                                                <include reference="Qhi-84-NVu"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.082352941176470587" green="0.41568627450980394" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.50588235290000005" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="OBz-LP-baS" firstAttribute="leading" secondItem="2pq-w1-2zL" secondAttribute="leading" constant="8" id="0uz-Md-9MY"/>
+                                    <constraint firstItem="OBz-LP-baS" firstAttribute="leading" secondItem="2pq-w1-2zL" secondAttribute="leading" constant="8" id="0uz-Md-9MY">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                                    </constraint>
                                     <constraint firstItem="OBz-LP-baS" firstAttribute="top" secondItem="2pq-w1-2zL" secondAttribute="top" constant="37" id="PbQ-Dp-nOA"/>
                                     <constraint firstAttribute="trailing" secondItem="8GZ-4E-cOn" secondAttribute="trailing" id="Slb-vU-HDb"/>
                                     <constraint firstItem="8GZ-4E-cOn" firstAttribute="leading" secondItem="2pq-w1-2zL" secondAttribute="leading" id="ULi-Oq-UQh"/>
@@ -459,8 +461,8 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="subviews">
-                                        <exclude reference="8GZ-4E-cOn"/>
                                         <exclude reference="OBz-LP-baS"/>
+                                        <exclude reference="8GZ-4E-cOn"/>
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="0uz-Md-9MY"/>
@@ -472,8 +474,8 @@
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <mask key="subviews">
-                                        <include reference="8GZ-4E-cOn"/>
                                         <include reference="OBz-LP-baS"/>
+                                        <include reference="8GZ-4E-cOn"/>
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="0uz-Md-9MY"/>
