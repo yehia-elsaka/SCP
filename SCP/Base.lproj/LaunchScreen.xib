@@ -19,6 +19,9 @@
                     <color key="textColor" red="0.11764705882352941" green="0.50196078431372548" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="3ea-HU-58T">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="mIt-j2-9UY">
                     <rect key="frame" x="16" y="104" width="448" height="272"/>
                 </imageView>
@@ -34,6 +37,8 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="3ea-HU-58T" secondAttribute="bottom" id="0UW-WP-9I0"/>
+                <constraint firstAttribute="trailing" secondItem="3ea-HU-58T" secondAttribute="trailing" id="7z3-GT-ln1"/>
                 <constraint firstItem="mIt-j2-9UY" firstAttribute="top" secondItem="fgJ-Gj-3Bo" secondAttribute="bottom" constant="8" id="B0R-Nb-G1O"/>
                 <constraint firstAttribute="trailing" secondItem="8ie-xW-0ye" secondAttribute="trailing" constant="22" id="IHV-nY-sHl"/>
                 <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
@@ -43,7 +48,9 @@
                 <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="23" id="avr-uY-c8k"/>
                 <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="b4f-vB-kWg"/>
+                <constraint firstItem="3ea-HU-58T" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="c2W-VJ-aLG"/>
                 <constraint firstAttribute="trailing" secondItem="fgJ-Gj-3Bo" secondAttribute="trailing" constant="18" id="dgL-Rv-CCr"/>
+                <constraint firstItem="3ea-HU-58T" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jcw-hj-RBk"/>
                 <constraint firstItem="mIt-j2-9UY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="ovX-7c-WeW"/>
                 <constraint firstAttribute="trailing" secondItem="mIt-j2-9UY" secondAttribute="trailing" constant="16" id="ubu-Lg-W3U"/>
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="top" secondItem="mIt-j2-9UY" secondAttribute="bottom" constant="63" id="xc9-Ma-OdX"/>
@@ -61,6 +68,7 @@
         </view>
     </objects>
     <resources>
+        <image name="bg" width="2560" height="1600"/>
         <image name="splash" width="600" height="465"/>
     </resources>
 </document>

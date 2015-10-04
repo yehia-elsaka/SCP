@@ -10,5 +10,6 @@
 
 @interface ServicesController : UIViewController
 - (IBAction)back:(id)sender;
+- (IBAction)selectCircle:(id)sender;
 
 @end
